@@ -14,13 +14,13 @@
 
 .debug .headertop{
     background-color: #add8e6;
-    max-height: 400px;
+    max-height: 80px;
 }
 
 
 .debug .headerbottom{
     background-color: #00008b;
-    max-height: 400px;
+    max-height: 500px;
 }
 
 .debug .headcont{
@@ -29,8 +29,16 @@
 
 .headcont .logo,
 .headcont nav,
-.headcont .login{
+.headcont .login,
+.headerbottom .dowcont{
+    padding: 6px;
     border: 2px dashed black;
+}
+
+.debug .dowcont{
+    background-color: #ee82ee;
+    width: 80%;
+    height: 400px;
 }
 
 
@@ -49,23 +57,11 @@
 -----------------------*/
 
 .headertop{
-    padding: 15px 0px;
+    padding: 25px 0px;
 }
 
 .headerbottom{
-    padding: 40px 0px;
-}
-
-.container .headertop{
-    display: flex;
-}
-
-.container .headerbottom{
-    display: flex;
-}
-
-.headertop .headcont{
-    display: flex;
+    padding: 30px 0px;
 }
 
 .headcont .logo,
@@ -76,6 +72,29 @@
 
 .headcont nav{
     flex-grow: 1;
+}
+
+nav{
+    text-align: center;
+}
+
+
+.login{
+    text-align: right;
+}
+
+
+.container .headerbottom{
+    display: flex;
+}
+
+.headertop .headcont{
+    display: flex;
+}
+
+.headerbottom .dowcont{
+
+    display: flex;
 }
 
 
