@@ -27,6 +27,13 @@
     background-color: #daa520;
 }
 
+.headcont .logo,
+.headcont nav,
+.headcont .login{
+    border: 2px dashed black;
+}
+
+
 /*----------------------
         SET GENERALE         
 -----------------------*/
@@ -57,7 +64,7 @@
     display: flex;
 }
 
-.headcont{
+.headertop .headcont{
     display: flex;
 }
 
@@ -72,8 +79,3 @@
 }
 
 
-.headertop .logo,
-.headertop nav,
-.headertop .login{
-    border: 2px dashed black;
-}
