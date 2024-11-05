@@ -32,7 +32,7 @@
 .headcont .login,
 .headerbottom .dowcont{
     padding: 6px;
-    border: 2px dashed black;
+    border: 1px dashed black;
 }
 
 .debug .dowcont{
@@ -40,6 +40,27 @@
     width: 80%;
     height: 400px;
 }
+
+.debug .col1{
+    background-color: #ffc0cb;
+    height: 500px;
+}
+
+.debug .col2{
+    background-color: #1e90ff;
+    height: 500px;
+}
+
+.debug .col1,
+.debug .col2{
+    height: 500px;
+    border: 1px dashed black;
+}
+
+.debug #sezione1{
+    height: 600px;
+}
+
 
 
 /*----------------------
@@ -98,3 +119,25 @@ nav{
 }
 
 
+/*----------------------
+        MAIN         
+-----------------------*/
+
+#sezione1, 
+#sezione2,
+#sezione3{
+    display: flex;
+    padding: 50px 0px;
+}
+
+#sezione1 .col1,
+#sezione2 .col2,
+#sezione3 .col1{
+    width: 40%;
+}
+
+#sezione1 .col2,
+#sezione2 .col1,
+#sezione3 .col2{
+    width: 60%;
+}
