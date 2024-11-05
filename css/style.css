@@ -57,10 +57,25 @@
     border: 1px dashed black;
 }
 
-.debug #sezione1{
+.debug #sezione1,
+.debug #sezione2,
+.debug #sezione3{
     height: 600px;
 }
 
+.debug .grayback{
+    background-color: #d3d3d3;
+    max-height: 1000px;
+}
+
+.debug #sezione4{
+    height: 1000px;
+}
+.debug .content{
+    background-color: #228b22;
+    height: 900px;
+    border: 1px dashed black;
+}
 
 
 /*----------------------
@@ -123,9 +138,9 @@ nav{
         MAIN         
 -----------------------*/
 
-#sezione1, 
-#sezione2,
-#sezione3{
+main #sezione1, 
+main #sezione2,
+main #sezione3{
     display: flex;
     padding: 50px 0px;
 }
@@ -140,4 +155,13 @@ nav{
 #sezione2 .col1,
 #sezione3 .col2{
     width: 60%;
+}
+
+main #sezione4{
+    display: flex;
+    padding: 50px 0px;
+}
+
+#sezione4 .content{
+    width: 90%;
 }
