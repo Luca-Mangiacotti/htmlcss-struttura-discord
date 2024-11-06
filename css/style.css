@@ -27,45 +27,40 @@
     background-color: #daa520;
 }
 
-.headcont .logo,
-.headcont nav,
-.headcont .login,
-.headerbottom .dowcont{
+.debug .headcont .logo,
+.debug .headcont nav,
+.debug .headcont .login,
+.debug .headerbottom .dowcont{
     padding: 6px;
     border: 1px dashed black;
 }
 
 .debug .dowcont{
     background-color: #ee82ee;
-    width: 80%;
-    height: 400px;
+    min-height: 400px;
 }
 
 .debug .col1{
-    background-color: #ffc0cb;
-    height: 500px;
+    background-color: #1e90ff;
+   
 }
 
-.debug .col2{
-    background-color: #1e90ff;
-    height: 500px;
+.debug .col2,
+.debug .footer-top .col2{
+    background-color: #ffc0cb;
+    
 }
 
 .debug .col1,
 .debug .col2{
-    height: 500px;
+    min-height: 500px;
     border: 1px dashed black;
 }
 
 .debug #sezione1,
 .debug #sezione2,
 .debug #sezione3{
-    height: 600px;
-}
-
-.debug .grayback{
-    background-color: #d3d3d3;
-    max-height: 1000px;
+    min-height: 600px;
 }
 
 .debug #sezione4{
@@ -73,10 +68,36 @@
 }
 .debug .content{
     background-color: #228b22;
-    height: 900px;
+    min-height: 900px;
     border: 1px dashed black;
 }
 
+
+.debug .footer-top > .container {
+    min-height: 500px;
+}
+
+.debug .footer-top .col2 > .colInt {
+    border: 1px dashed white;
+}
+
+.debug .footer-top .col1{
+    background-color: #f08080;
+}
+
+.debug .footer-top .col2{
+    background-color: #20b2aa;
+}
+
+.debug .footer-bottom > .container {
+    background-color: #7fffd4;
+}
+
+.debug .footer-bottom .logo,
+.debug .footer-bottom .btn {
+    border: 1px dashed black;
+    background-color: #ffb6c1;
+}
 
 /*----------------------
         SET GENERALE         
@@ -86,6 +107,11 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.grayback{
+    background-color: #d3d3d3;
+    max-height: 1000px;
 }
 
 /*----------------------
@@ -120,19 +146,19 @@ nav{
 }
 
 
-.container .headerbottom{
-    display: flex;
-}
-
 .headertop .headcont{
     display: flex;
 }
-
-.headerbottom .dowcont{
-
-    display: flex;
+.dowcont{
+    width: 80%;
 }
 
+.headcont .logo,
+.headcont nav,
+.headcont .login,
+.headerbottom .dowcont{
+    padding: 6px;
+}
 
 /*----------------------
         MAIN         
@@ -148,20 +174,64 @@ main #sezione3{
 #sezione1 .col1,
 #sezione2 .col2,
 #sezione3 .col1{
-    width: 40%;
+    width: 60%;
 }
 
 #sezione1 .col2,
 #sezione2 .col1,
 #sezione3 .col2{
-    width: 60%;
+    width: 40%;
 }
 
 main #sezione4{
-    display: flex;
     padding: 50px 0px;
 }
 
 #sezione4 .content{
-    width: 90%;
+    width: 100%;
+}
+
+
+/*----------------------
+        FOOTER         
+-----------------------*/
+footer{
+    background-color:#23272a ;
+}
+
+.footer-top {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-top > .container {
+    display: flex;
+}
+
+.footer-top .col1 {
+    width: 30%;
+}
+.footer-top .col2 {
+    width: 70%;
+    display: flex;
+}
+
+.footer-top .col2 > .colInt {
+    width: 25%;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid white;
+}
+
+.footer-bottom > .container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .logo,
+.footer-bottom .btn {
+    padding: 6px 14px;
 }
