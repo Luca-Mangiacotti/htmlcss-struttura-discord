@@ -40,12 +40,14 @@
     min-height: 400px;
 }
 
-.debug .col1{
+.debug .col1,
+.debug #sezione2 .col2{
     background-color: #1e90ff;
    
 }
 
 .debug .col2,
+.debug #sezione2 .col1,
 .debug .footer-top .col2{
     background-color: #ffc0cb;
     
